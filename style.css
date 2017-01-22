@@ -20,3 +20,12 @@ h1 {
 a {
   color: red;
 }
+option {
+  color: white;
+}
+select {
+  color: white;
+  background: #333;
+  width: 150px;
+  height: 30px;
+}
