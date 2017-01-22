@@ -2,11 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font: 20px sans-serif;
+    font: 18px sans-serif;
     color: white;
 }
 body {
     background: #333;
     margin: 3px;
     overflow: scroll;
+}
+.row {
+    white-space: nowrap;
+    padding: 5px 0;
+}
+h1 {
+  font: 25px sans-serif;
+}
+a {
+  color: red;
 }
