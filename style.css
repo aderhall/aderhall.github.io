@@ -5,6 +5,10 @@
     font: 18px sans-serif;
     color: white;
 }
+.center {
+    max-width: 500px;
+    margin: auto;
+}
 body {
     background: #333;
     margin: 3px;
