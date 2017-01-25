@@ -6,8 +6,17 @@
     color: white;
 }
 .center {
-    max-width: 500px;
+    max-width: 1000px;
+    /*max-height: 500px;*/
+    /*padding: 100px;*/
+    /*vertical-align: middle;*/
+    padding: 50px;
     margin: auto;
+    text-align: center;
+}
+.main {
+    vertical-align: middle;
+    padding: 100px;
 }
 body {
     background: #333;
@@ -32,4 +41,39 @@ select {
   background: #333;
   width: 150px;
   height: 30px;
+}
+.parallax {
+    /* The image used */
+    background: url("galaxy.jpg");
+    filter:hue-rotate(90deg);
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-color 1s;
+}
+.parallax:hover {
+  background-color: rgba(255,0,0,.5);
+}
+.parallax:before {
+  background-color: inherit;
+}
+.boo {
+  position: relative;
+  width: 20em; min-height: 10em;
+  background: rgba(0,0,0,0) url(http://placekitten.com/320/160);
+  transition: background-color 1s;
+}
+.boo:hover {
+  background-color: rgba(0,0,0,.5);
+}
+.boo:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+  content: ' ';
 }
