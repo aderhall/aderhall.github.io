@@ -47,21 +47,16 @@ select {
     background: url("galaxy.jpg");
     filter:hue-rotate(90deg);
     /* Set a specific height */
-    height: 500px;
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background-color 1s;
+    /*transition: background-color 1s;*/
 }
-.parallax:hover {
-  background-color: rgba(255,0,0,.5);
-}
-.parallax:before {
-  background-color: inherit;
-}
+
 .boo {
   position: relative;
   width: 20em; min-height: 10em;
