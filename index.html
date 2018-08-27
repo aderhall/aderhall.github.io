@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adrian Hall</title>
@@ -23,6 +21,8 @@
             color: #444;
             padding: 0 10px;
             font-family: Typewriter;
+            background-color: #faebd7;
+            overflow: hidden;
         }
         h1,h2,h3 {
             line-height:1.2
@@ -63,7 +63,7 @@
     </head>
 <body>
     <div style="position:relative;width:760px;">
-        <div style="position:absolute;left:50%;margin-left:-200px;top:50%;margin-top:-35px;width:760px;height:70px;">
+        <div style="position:absolute;left:50%;margin-left:-200px;top:50%;margin-top:-60px;width:760px;height:70px;">
             <ul class="navbar">
               <li><a href="index.html">Home</a></li>
               <li><a href="fancy.html">Fancy Home</a></li>
@@ -72,29 +72,17 @@
             </ul>
         </div>
     </div>
-    <div style="display:table;width:760px;height:300px">
-        <div style="display:table-cell;vertical-align:middle;">
-            <div style="text-align:center;height:88px;font-size:88px;">
+    <div style="width:100%;height:100%;position:relative;padding-top: 50%;padding-bottom: 50%;">
+
+            <div style="text-align:center;font-size:88px;left: 50%;top:50%;transform: translate(-50%, -50%);position:absolute;width: 100%;height:60%;">
                 <h1>Adrian Hall</h1>
-                <h2 id="d"></h2>
+                <h2 id="d">Abort!</h2>
             </div>
-        </div>
+
     </div>
-    <div style="margin-top:200px">
-        <h3>About Me</h3>
-        <p>I am a blob of carbon, oxygen, nitrogen and some other stuff. Not just any blob, though.<br>I am a machine that was programmed many years ago to endlessly copy myself forever.<br>I am the product of the abstract codes represented by a double helix structure of nucleotides and the most complex bioengineering tools ever created, but I'm more than the sum of the two.</p>
-        <h3>And that's not all.</h3>
-        <p>I am a computer, home to the most advanced artificial intelligence in the known universe.<br>I am part of the universe, yet I can observe all that I encounter and process it with power greater than what is inherent to the universe itself. I am even capable of observing myself.</p>
-        <h3>I am intelligent.</h3>
-        <p>I can comprehend the thoughts that pass through my brain, and I can comprehend the thoughts involved in comprehending those.<br>I am aware of the irony of writing this pretentious prose while at the same time acknowleding its pretention (and said irony). That said, I am not afraid to go more meta than anyone has ever gone before, and then go behind that endless stack and be meta about it too.</p>
-        <h3>I am reckless and unpredictable.</h3>
-        <p>I can make a rational decision about whether making a website like this is a good idea and then completely ignore the result.<br>I can imagine a hypothetical universe in which all inhabitants are aware that they are in a hypothetical universe and have the power and will to escape. Think about it.<br>I can type a paragraph of text about what I can do without doing any of it.</p>
-        <h3>I exist.</h3>
-        <p>I am an intelligent, observant, beautiful, stupid, blind, ugly pattern of existence in a huge field of matter beyond my comprehension. My existence is negligible in all dimensions, but I don't care.<br>I live, I laugh, I love, I die. I am, in short, a human being.</p>
-        <p><br>Right now I program stuff and mope about philosophy from my home base on a tiny space rock on the rim of the galaxy.</p>
-    </div>
-    <div style="position:relative;width:760px;margin-bottom:100px;margin-top:40px;">
-        <div style="position:absolute;left:50%;margin-left:-200px;top:50%;margin-top:-35px;width:760px;height:70px;">
+
+    <div style="position:absolute;width:760px;bottom: 0px;margin-top:40px;padding-bottom: 100px;">
+        <div style="position:absolute;left:50%;margin-left:-200px;width:760px;height:70px;">
             <ul class="navbar">
               <li><a href="index.html">Home</a></li>
               <li><a href="fancy.html">Fancy Home</a></li>
@@ -105,10 +93,12 @@
     </div>
     <script type="text/javascript">
         var description = document.getElementById('d');
-        var descriptions = ['A regular human being', '/dev/null', 'True ruler of Cyberspace', 'Space Cowboy', 'Took a right turn at Albequerque', 'One of your slightly less enjoyable nightmares', 'Animal Crackers ruined my life', 'Don\'t tell me what I can\'t do', 'Gone where many men have gone before', 'On call for any last-minute astronaut recruitments', 'Insert funny slogan here', 'I have no less life than anyone else', 'Debugging, please wait', 'Looking for that ONE @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Compiling!', 'I don\'t actually need this job']
+        var descriptions = ['A mostly functional human being', 'Mostly harmless', 'This is my site ... Yay?', 'Loading textures...', 'Press F to pay respects', 'Keep out of reach of children', 'Did you try rebooting it?', 'Now available with same-day drone delivery!', 'Abort!', 'I sense that the problem exists between the keyboard and the chair', 'Stand by for undocking', 'Party\'s over', '/dev/null', 'True ruler of Cyberspace', 'Space Cowboy', 'Took a right turn at Albequerque', 'One of your slightly less enjoyable nightmares', 'Animal crackers massacred my people', 'Don\'t tell me what I can\'t do', 'Gone where many men have gone before', 'On call for any last-minute astronaut recruitments', 'Insert funny slogan here', 'Debugging, please wait', 'Looking for that ONE @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Compiling!', 'I don\'t actually need this job', 'Expires May 20th, 1994', 'Just add water!', 'Loading: 10%. Do not turn off your PC', ',r,w frg ajygannf e.jre.e ydcoZ b.pev', 'It\'s ok to cry', 'Do not close this tab', 'Nothing is real']
         console.log(descriptions[Math.floor(Math.random()*descriptions.length)]);
         console.log(description);
         description.innerHTML = descriptions[Math.floor(Math.random()*descriptions.length)]
     </script>
-</body>
-</html>
+
+
+
+</body></html>

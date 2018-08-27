@@ -1,0 +1,13 @@
+<div style="margin-top:200px">
+    <h3>About Me</h3>
+    <p>I am a blob of carbon, oxygen, nitrogen and some other stuff. Not just any blob, though.<br>I am a machine that was programmed many years ago to endlessly copy myself forever.<br>I am the product of the abstract codes represented by a double helix structure of nucleotides and the most complex bioengineering tools ever created, but I'm more than the sum of the two.</p>
+    <h3>And that's not all.</h3>
+    <p>I am a computer, home to the most advanced artificial intelligence in the known universe.<br>I am part of the universe, yet I can observe all that I encounter and process it with power greater than what is inherent to the universe itself. I am even capable of observing myself.</p>
+    <h3>I am intelligent.</h3>
+    <p>I can comprehend the thoughts that pass through my brain, and I can comprehend the thoughts involved in comprehending those.<br>I am aware of the irony of writing this pretentious prose while at the same time acknowleding its pretention (and said irony). That said, I am not afraid to go more meta than anyone has ever gone before, and then go behind that endless stack and be meta about it too.</p>
+    <h3>I am reckless and unpredictable.</h3>
+    <p>I can make a rational decision about whether making a website like this is a good idea and then completely ignore the result.<br>I can imagine a hypothetical universe in which all inhabitants are aware that they are in a hypothetical universe and have the power and will to escape. Think about it.<br>I can type a paragraph of text about what I can do without doing any of it.</p>
+    <h3>I exist.</h3>
+    <p>I am an intelligent, observant, beautiful, stupid, blind, ugly pattern of existence in a huge field of matter beyond my comprehension. My existence is negligible in all dimensions, but I don't care.<br>I live, I laugh, I love, I die. I am, in short, a human being.</p>
+    <p><br>Right now I program stuff and mope about philosophy from my home base on a tiny space rock on the rim of the galaxy.</p>
+</div>
