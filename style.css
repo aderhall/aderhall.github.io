@@ -4,6 +4,9 @@ font-family: lightTypewriter;
 src: url(atl.ttf);
 }
 */
+
+
+
 @font-face {
 font-family: Typewriter;
 src: url(at.ttf);
@@ -12,10 +15,12 @@ body, html {
   height: 100%;
 }
 body {
+    /*
+    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+    */
     margin: 0px auto;
     max-width: 80%;
     line-height: 1.6;
-    font-size: 17px;
     color: #444;
     padding: 0 10px;
     font-family: Typewriter;
@@ -26,12 +31,7 @@ h1,h2,h3,p {
     line-height:1.2;
     margin:0;
 }
-h1 {
-    font-size: 88px;
-}
-h2 {
-    font-size: 38px;
-}
+
 .title-container > h1, .title-container > h2 {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -126,4 +126,26 @@ a:hover {
 /* Corner */
 ::-webkit-scrollbar-corner {
   background: #fff3e4;
+}
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 11px;
+  }
+  h1 {
+      font-size: 40px;
+  }
+  h2 {
+      font-size: 17px;
+  }
+}
+@media screen and (min-width: 650px) {
+  body {
+    font-size: 17px;
+  }
+  h1 {
+      font-size: 88px;
+  }
+  h2 {
+      font-size: 38px;
+  }
 }
