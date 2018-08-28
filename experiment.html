@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLANK</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<script type="text/javascript">
+  var page = "https://aderhall.github.io/index.html";
+  function reqListener () {
+    document.write(this.responseText);
+  }
+  function loadPage(page) {
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("GET", page);
+    oReq.send();
+  }
+  if (page !== '') {
+    loadPage(page);
+  }
+</script>
+
+</body>
+
+</html>
