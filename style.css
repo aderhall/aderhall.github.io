@@ -9,7 +9,7 @@ src: url(atl.ttf);
 
 @font-face {
 font-family: Typewriter;
-src: url(at.ttf);
+src: url(downloads/at.ttf);
 }
 body, html {
   height: 100%; /* Fill entire viewport with body */
