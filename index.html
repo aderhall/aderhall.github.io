@@ -1,70 +1,16 @@
-<html><head>
+<html>
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adrian Hall</title>
-    <style type="text/css">
-	/*
-	@font-face {
-	font-family: lightTypewriter;
-	src: url(atl.ttf);
-	}
-	*/
-	@font-face {
-	font-family: Typewriter;
-	src: url(at.ttf);
-	}
-        body {
-            margin: 0px auto;
-            max-width: 760px;
-            line-height: 1.6;
-            font-size: 17px;
-            color: #444;
-            padding: 0 10px;
-            font-family: Typewriter;
-            background-color: #faebd7;
-            overflow: hidden;
-        }
-        h1,h2,h3 {
-            line-height:1.2
-        }
-        h1 {
-            font-size: 88px;
-        }
-        h2 {
-            font-size: 38px;
-        }
-        a {
-            text-decoration: none;
-            color: #00B;
-            transition: color .4s;
-        }
-        a:visited {
-            color: #00B;
-        }
-        a:hover {
-            color: #444;
-        }
-        .navbar {
-            margin: 0;
-            display: inline-block;
-            list-style-type: none;
-            padding: 0;
-            width: 100%;
-        }
-        .navbar > li {
-            display: inline-block;
-            float: left;
-            padding-left: 5px;
-        }
-        .navbar > li > a {
-            padding: 8px;
-            display: block;
-        }
-    </style>
-    </head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
 <body>
-    <div style="position:relative;width:100%;top:0%;height:5%;">
-        <div style="position:relative;top:50%;left:50%;display:inline-block;transform: translate(-50%, -50%);">
+
+    <div class="navbar-super top">
+        <div class="navbar-container">
             <ul class="navbar">
               <li><a href="index.html">Home</a></li>
               <li><a href="fancy.html">Free Money</a></li>
@@ -73,17 +19,16 @@
             </ul>
         </div>
     </div>
-    <div style="width:100%;height:90%;position:relative;">
 
-            <div style="text-align:center;font-size:88px;left: 50%;top:47%;transform: translate(-50%, -50%);position:absolute;width: 100%;">
+    <div class="title-super">
+            <div class="title-container">
                 <h1>Adrian Hall</h1>
                 <h2 id="d">Abort!</h2>
             </div>
-
     </div>
 
-    <div style="position:relative;width:100%;bottom: 0%;height:5%;">
-        <div style="position:relative;top:50%;left:50%;transform: translate(-50%, -50%);display:inline-block;">
+    <div class="navbar-super bottom">
+        <div class="navbar-container">
             <ul class="navbar">
               <li><a href="index.html">Home</a></li>
               <li><a href="fancy.html">Free Money</a></li>
@@ -92,14 +37,18 @@
             </ul>
         </div>
     </div>
+
     <script type="text/javascript">
         var description = document.getElementById('d');
-        var descriptions = ['A mostly functional human being', 'Mostly harmless', 'This is my site ... Yay?', 'Loading textures...', 'Press F to pay respects', 'Keep out of reach of children', 'Did you try rebooting it?', 'Now available with same-day drone delivery!', 'Abort!', 'Party\'s over', '/dev/null', 'True ruler of Cyberspace', 'Space Cowboy', 'Took a right turn at Albuquerque', 'One of your slightly less enjoyable nightmares', 'Animal crackers massacred my people', 'On call for any last-minute astronaut recruitments', 'Insert funny slogan here', 'Looking for that ONE @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Compiling!', 'Expires May 20th, 1994', 'Just add water!', 'Never tell me the odds', ',r,w frg ajygannf e.jre.e ydcoZ b.pev', 'It\'s ok to cry', 'Do not close this tab', 'Nothing is real',  'Don\'t panic', 'Produced from 100% recycled atoms', 'Yee-haw', 'What\'s the magic word?', 'Hanging on in quiet desperation', '2005 digitally remastered edition', '© 2001 Jehova Humans Corporation', 'Insert coin to play', 'Sounds good', 'Gesundheit', 'Guaranteed to blow your mind', 'Where is my mind?', 'The status is not quo', 'Time for some thrilling heroics']
-        console.log(descriptions[Math.floor(Math.random()*descriptions.length)]);
-        console.log(description);
-        description.innerHTML = descriptions[Math.floor(Math.random()*descriptions.length)]
+
+        var descriptions = ['A mostly functional human being', 'Mostly harmless', 'This is my site ... Yay?', 'Loading textures...', 'Press F to pay respects', 'Keep out of reach of children', 'Did you try rebooting it?', 'Now available with same-day drone delivery!', 'Abort!', 'Party\'s over', '/dev/null', 'True ruler of Cyberspace', 'Space Cowboy', 'Took a right turn at Albuquerque', 'One of your slightly less enjoyable nightmares', 'Animal crackers massacred my people', 'On call for any last-minute astronaut recruitments', 'Insert funny slogan here', 'Looking for that ONE @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Compiling!', 'Expires May 20th, 1994', 'Just add water!', 'Never tell me the odds', ',r,w frg ajygannf e.jre.e ydcoZ b.pev', 'It\'s ok to cry', 'Do not close this tab', 'Nothing is real',  'Don\'t panic', 'Produced from 100% recycled atoms', 'Yee-haw', 'What\'s the magic word?', 'Hanging on in quiet desperation', '2005 digitally remastered edition', '© 2001 Jehova Humans Corporation', 'Insert coin to play', 'Sounds good', 'Gesundheit', 'Guaranteed to blow your mind', 'Where is my mind?', 'The status is not quo', 'Time for some thrilling heroics'];
+
+        //console.log(descriptions[Math.floor(Math.random()*descriptions.length)]);
+        //console.log(description);
+
+        description.innerHTML = descriptions[Math.floor(Math.random()*descriptions.length)];
     </script>
 
+</body>
 
-
-</body></html>
+</html>
