@@ -39,11 +39,9 @@
     </div>
 
     <script type="text/javascript">
-
+        var description = document.getElementById('d');
         if (document.cookie === 'viewed=true') {
-          var description = document.getElementById('d');
-
-          var descriptions = ['A mostly functional human being', 'Mostly harmless', 'This is my site ... Yay?', 'Loading textures...', 'Press F to pay respects', 'Keep out of reach of children', 'Did you try rebooting it?', 'Now available with same-day drone delivery!', 'Abort!', 'Party\'s over', '/dev/null', 'True ruler of Cyberspace', 'Space Cowboy', 'Took a right turn at Albuquerque', 'One of your slightly less enjoyable nightmares', 'Animal crackers massacred my people', 'Insert funny slogan here', 'Looking for that ONE @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Compiling!', 'Expires May 20th, 1994', 'Just add water!', 'Never tell me the odds', ',r,w frg ajygannf e.jre.e ydcoZ b.pev', 'It\'s ok to cry', 'Do not close this tab', 'Don\'t panic', 'Produced from 100% recycled atoms', 'Yee-haw!', 'What\'s the magic word?', 'Hanging on in quiet desperation', '2005 digitally remastered edition', '© 2001 Jehova Humans Corporation', 'Insert coin to play', 'Sounds good', 'Gesundheit', 'Guaranteed to blow your mind', 'Where is my mind?', 'Because the status is not quo', 'Time for some thrilling heroics', 'Roughly 90% hummus', 'Boo.'];
+          var descriptions = ['A mostly functional human being', 'Mostly harmless', 'Loading textures...', 'Press F to pay respects', 'Keep out of reach of children', 'Did you try rebooting it?', 'Now available with same-day drone delivery!', 'Abort!', 'Party\'s over', '/dev/null', 'True ruler of Cyberspace', 'Space Cowboy', 'Took a right turn at Albuquerque', 'One of your slightly less enjoyable nightmares', 'Animal crackers massacred my people', 'Insert funny slogan here', 'Looking for that ONE @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Compiling!', 'Expires May 20th, 1994', 'Just add water!', 'Never tell me the odds', ',r,w frg ajygannf e.jre.e ydcoZ b.pev', 'It\'s ok to cry', 'Do not close this tab', 'Don\'t panic', 'Produced from 100% recycled atoms', 'Yee-haw!', 'What\'s the magic word?', 'Hanging on in quiet desperation', '2005 digitally remastered edition', '© 2001 Jehova Humans Corporation', 'Insert coin to play', 'Sounds good', 'Gesundheit', 'Guaranteed to blow your mind', 'Where is my mind?', 'Because the status is not quo', 'Time for some thrilling heroics', 'Roughly 90% hummus', 'What is love?'];
 
           //console.log(descriptions[Math.floor(Math.random()*descriptions.length)]);
           //console.log(description);
@@ -51,6 +49,9 @@
           description.innerHTML = descriptions[Math.floor(Math.random()*descriptions.length)];
         } else {
           document.cookie = 'viewed=true';
+
+          var firstImpressions = ['A mostly functional human being', 'Mostly harmless', 'Press F to pay respects', 'Now available with same-day drone delivery!', 'Party\'s over', 'True ruler of Cyberspace', 'Space Cowboy', 'A baseline human, mostly unmodified by genetic engineering.', 'Expires May 20th, 1994', 'Do not close this tab', 'Don\'t panic', 'Yee-haw!', '2005 digitally remastered edition', 'Insert coin to play', 'Time for some thrilling heroics', 'Roughly 90% hummus'];
+          description.innerHTML = firstImpressions[Math.floor(Math.random()*firstImpressions.length)];
           console.log('Created cookie');
         }
 
