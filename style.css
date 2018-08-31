@@ -56,6 +56,9 @@ a:hover {
 .scroll > li {
   display: list-item;
 }
+.vertical {
+  padding: 0;
+}
 .vertical > li {
   display: block;
 }
