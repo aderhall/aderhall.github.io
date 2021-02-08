@@ -17,7 +17,7 @@
 
 html {
     background-color: #fdfcfb;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -61,7 +61,6 @@ h2 {
 }
 
 .title {
-    max-width: 300px;
     margin: 0 auto;
     text-align: center;
     padding: 10px;
@@ -110,7 +109,7 @@ h2 {
     margin: 1em 0;
 }
 
-@media only screen and (min-width: 330px) {
+@media only screen and (min-width: 400px) {
     html {
         font-size: 22px;
     }
