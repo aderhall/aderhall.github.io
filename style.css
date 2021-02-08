@@ -1,153 +1,135 @@
-/*
-@font-face {
-font-family: lightTypewriter;
-src: url(atl.ttf);
-}
+/* Colors:
+    Jade: #3a7359
+    Jade (contrast): #2b5844
+    Egyptian Blue: #345d98
+    Mint: #b0dabe
 */
 
-
-
 @font-face {
-font-family: Typewriter;
-src: url(downloads/at.ttf);
-}
-body, html {
-  height: 100%; /* Fill entire viewport with body */
-}
-body {
-    /* For dynamic font responsiveness:
-    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-    */
-    margin: 0px auto; /* Center body */
-    max-width: 80%;
-    line-height: 1.6;
-    color: #444;
-    padding: 0 10px;
-    font-family: Typewriter;
-    background-color: #faebd7;
-    overflow: hidden;
-}
-h1,h2,h3,p {
-    line-height:1.2;
-    margin:0;
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    /*src: url(https://fonts.gstatic.com/s/bitter/v17/raxhHiqOu8IVPmnRc6SY1KXhnF_Y8ajfOLjOW3pzveS5Bw.woff) format('woff');*/
+    src: url(bitter.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.title-container > h1, .title-container > h2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+html {
+    background-color: #fdfcfb;
+    font-size: 16px;
 }
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Bitter', monospace;
+}
+
 a {
     text-decoration: none;
-    color: #00B;
-    transition: color .4s;
-}
-a:visited {
-    color: #00B;
+    color: #2b5844;
+    transition: opacity 0.2s;
 }
 a:hover {
-    color: #444;
+    opacity: 0.8;
 }
-.scroll {
-  background-color: #fff3e4;
-  list-style-type: square;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.scroll > li {
-  display: list-item;
-}
-.vertical > li {
-  display: block;
-}
-.content {
-  width:100%;
-  height:90%;
-  position:relative;
-}
-.title-container {
-  text-align:center;
-  left: 50%;
-  top:47%;
-  transform: translate(-50%, -50%);
-  position:absolute;
-  width: 100%;
-}
-.navbar-super {
-  position:relative;
-  width:100%;
-  height:5%;
-}
-.navbar-super .top {
-  top: 0%;
-}
-.navbar-super .bottom {
-  bottom: 0%;
-}
-.navbar-container {
-  position:relative;
-  left:50%;
-  top: 50%;
-  display:inline-block;
-  transform: translate(-50%, -50%);
-}
-.navbar {
+
+
+h1 {
+    font-size: 2em;
     margin: 0;
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
 }
-.navbar > li {
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.8em;
+}
+
+.hero {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    border-bottom: 2px solid #3a7359;
+}
+
+.centered-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.title {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.title__name>h1 {
+    display: inline;
+}
+
+.title__swoosh {
+    display: inline;
+    margin-right: 15px;
+}
+.title__swoosh::before {
+    content: "";
     display: inline-block;
-    float: left;
-    padding-left: 5px;
+    width: 0.3em;
+    margin-right: 0.15em;
+    height: 0.75em;
+    background-color: #345d98;
+    /*background: linear-gradient(90deg, #2b5844 40%, white 40% 60%, #345d98 60%);*/
+    transform: skewX(-20deg);
 }
-.navbar > li > a {
-    padding: 8px;
-    display: block;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #fff3e4;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #777;
+.title__swoosh::after {
+    content: "";
+    display: inline-block;
+    width: 0.3em;
+    height: 0.75em;
+    background-color: #2b5844;
+    /*background: linear-gradient(90deg, #2b5844 40%, white 40% 60%, #345d98 60%);*/
+    transform: skewX(-20deg);
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #444;
+#slogan {
+    color: #444;
+    cursor: pointer;
+    margin: 1em 0;
 }
 
-/* Corner */
-::-webkit-scrollbar-corner {
-  background: #fff3e4;
+.title__contact {
+    list-style: none;
+    padding: 0;
 }
-@media screen and (max-width: 650px) {
-  body {
-    font-size: 8px;
-  }
-  h1 {
-      font-size: 40px;
-  }
-  h2 {
-      font-size: 17px;
-  }
+
+.title__contact>li {
+    margin: 1em 0;
 }
-@media screen and (min-width: 650px) {
-  body {
-    font-size: 17px;
-  }
-  h1 {
-      font-size: 88px;
-  }
-  h2 {
-      font-size: 38px;
-  }
+
+@media only screen and (min-width: 330px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .hero {
+        background-color: #fdfcfb;
+        background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23345d98' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+    .title {
+        text-align: left;
+        margin: 0 18%;
+        background-color: white;
+        padding: 40px;
+        max-width: 400px;
+        border: 2px dashed #2b5844;
+    }
+    /*h1 {
+        margin: 0 0 0.5em;
+    }*/
 }

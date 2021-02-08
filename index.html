@@ -1,54 +1,48 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A homo sapiens who likes learning, thinking, and helping people.">
+    <meta name="author" content="Adrian Hall">
+    <meta name="theme-color" content="#3a7359">
+    
+    <!-- Favicon stuff: -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#56a983">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    
+    <link rel="preload" href="bitter.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css">
     <title>Adrian Hall</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-
-<body>
-
-    <div class="navbar-super top">
-        <div class="navbar-container">
-            <ul class="navbar">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="fancy.html">Free Money</a></li>
-              <li><a href="contact.html">Contact Me</a></li>
-              <li><a href="downloads.html">Downloads</a></li>
-            </ul>
+<body>   
+    <main>
+        <div class="hero">
+            <div class="centered-container">
+                <div class="title">
+                    <h1 class="title__name"><span class="title__swoosh"></span>Adrian Hall</h1>
+                    <h2 id="slogan" onclick="setSlogan();">‏‏‎ ‎</h4>
+                    <ul class="title__contact">
+                        <li>Mail: <a href="mailto:adrianhall2020@gmail.com">adrianhall2020@gmail.com</a></li>
+                        <li>Github: <a href="https://github.com/aderhall">aderhall</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="content">
-      <div class="title-container">
-        <h1>Adrian Hall</h1>
-        <h2 id="d"> </h2>
-      </div>
-    </div>
-
-    <div class="navbar-super bottom">
-        <div class="navbar-container">
-            <ul class="navbar">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="fancy.html">Free Money</a></li>
-              <li><a href="contact.html">Contact Me</a></li>
-              <li><a href="downloads.html">Downloads</a></li>
-            </ul>
-        </div>
-    </div>
-
+    </main>
+    
     <script type="text/javascript">
-        var description = document.getElementById('d');
-
-        var descriptions = ['A mostly functional human being', 'Mostly harmless', 'This is my site ... Yay?', 'Loading textures...', 'Press F to pay respects', 'Keep out of reach of children', 'Did you try rebooting it?', 'Now available with same-day drone delivery!', 'Abort!', 'Party\'s over', '/dev/null', 'True ruler of Cyberspace', 'Space Cowboy', 'Took a right turn at Albuquerque', 'One of your slightly less enjoyable nightmares', 'Animal crackers massacred my people', 'Insert funny slogan here', 'Looking for that ONE @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Compiling!', 'Expires May 20th, 1994', 'Just add water!', 'Never tell me the odds', ',r,w frg ajygannf e.jre.e ydcoZ b.pev', 'It\'s ok to cry', 'Do not close this tab', 'Don\'t panic', 'Produced from 100% recycled atoms', 'Yee-haw!', 'What\'s the magic word?', 'Hanging on in quiet desperation', '2005 digitally remastered edition', '© 2001 Jehova Humans Corporation', 'Insert coin to play', 'Sounds good', 'Gesundheit', 'Guaranteed to blow your mind', 'Where is my mind?', 'Because the status is not quo', 'Time for some thrilling heroics', 'Roughly 90% hummus', 'Boo.'];
-
-        //console.log(descriptions[Math.floor(Math.random()*descriptions.length)]);
-        //console.log(description);
-
-        description.innerHTML = descriptions[Math.floor(Math.random()*descriptions.length)];
+        function setSlogan() {
+            var sloganElement = document.getElementById('slogan');
+            var slogans = ['A totally functional human being', 'Mostly harmless', 'Did you try rebooting it?', 'Now available in 8 flattering colors!', 'Rightful ruler of Cyberspace', 'Space Cowboy', 'Missed a left turn at Albuquerque', 'Witty subtitle', 'Still looking for that one @%$^%#ing screwdriver', 'A baseline human, mostly unmodified by genetic engineering.', 'Just add water!', 'Never tell me the odds', ',r,w frg ajygannf e.jre.e ydcoZ b.pev', 'Don\'t panic', 'Made from 100% recycled atoms', '2005 digitally remastered edition', 'Guaranteed to blow your mind', 'Because the status... is NOT quo!', 'Time for some thrilling heroics', 'Roughly 90% hummus'];
+            sloganElement.textContent = slogans[Math.floor(Math.random()*slogans.length)];
+        }
+        window.onload = setSlogan;
     </script>
-
 </body>
-
 </html>
