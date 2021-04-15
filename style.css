@@ -26,6 +26,9 @@ body {
     font-family: 'Bitter', monospace;
 }
 
+::selection { background: #a4e4c7; }
+::-moz-selection { background: #a4e4c7; }
+
 a {
     text-decoration: none;
     color: #2b5844;
